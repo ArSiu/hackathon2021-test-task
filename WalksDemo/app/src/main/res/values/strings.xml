@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WalksDemo</string>
+    <string name="title_home">Home</string>
+    <string name="title_map">Map</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="button_start_tracking">Start Location Tracking</string>
+    <string name="button_stop_tracking">Stop Location Tracking</string>
+    <string name="button_show_last_location">Show Last Location</string>
+    <string name="notification_title">Walks Steps Logger</string>
+    <string name="notification_message">Stores location and timestamps</string>
+    <string name="ticker_text">Walks</string>
+</resources>
