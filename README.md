@@ -19,9 +19,10 @@
 ### How to use
 - How to use?
 - Everything is as simple as possible, to start using and saving the results, 
-- you need to register using Google or Facebook.When you are about to start 
-- training, you need to click on Start (this will only start recording your 
-- trajectory, your steps are recorded whenever the program is running).
+   you need to register using Google or Facebook
+- When you are about to start 
+  training, you need to click on Start (this will only start recording your 
+  trajectory, your steps are recorded whenever the program is running).
 - Once you have finished your workout, press the Stop button and your 
-- trajectory is immediately saved and available for viewing along with 
-- all other data.
+  trajectory is immediately saved and available for viewing along with 
+  all other data.
