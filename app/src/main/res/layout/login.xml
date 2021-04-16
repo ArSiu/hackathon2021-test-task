@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEBEB">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="21dp"
+            android:background="#D7D7D7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:id="@+id/bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#E7E7E7"
+                    android:foreground="@drawable/vana_bg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/main_vana"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/login_btns"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="11dp"
+                            android:layout_marginEnd="11dp"
+                            android:layout_marginBottom="7dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/start"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="80dp"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginEnd="11dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/login">
+
+                                        <View
+                                            android:id="@+id/start_"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="80dp"
+                                            android:foreground="@drawable/bg_text"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <!--<ImageButton
+                                            android:id="@+id/google_btn"
+                                            android:layout_width="0dp"
+                                            android:layout_height="80dp"
+                                            android:background="#00FFFFFF"
+                                            android:foreground="@drawable/bg_text"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />-->
+
+                                        <com.google.android.gms.common.SignInButton
+                                            android:id="@+id/google_btn"
+                                            android:layout_width="0dp"
+                                            android:layout_height="80dp"
+                                            android:background="#00FFFFFF"
+                                            android:foreground="@drawable/bg_text"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/start_textView2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="17dp"
+                                            android:fontFamily="@font/scp"
+                                            android:forceHasOverlappingRendering="false"
+                                            android:text="Google"
+                                            android:textColor="#333333"
+                                            android:textSize="32sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent" />
+
+                                        <ImageView
+                                            android:id="@+id/start_imageView"
+                                            android:layout_width="64dp"
+                                            android:layout_height="64dp"
+                                            android:layout_marginStart="16dp"
+                                            android:layout_marginTop="7dp"
+                                            android:contentDescription="@string/image"
+                                            android:foreground="@drawable/ic_google__1_"
+                                            android:foregroundTint="#D85A5A"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/ic_google__1_"
+                                            tools:srcCompat="@drawable/ic_google__1_" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/logut"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="80dp"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginEnd="11dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/start">
+
+                                        <View
+                                            android:id="@+id/stop_"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="80dp"
+                                            android:layout_marginStart="11dp"
+                                            android:layout_marginEnd="11dp"
+                                            android:foreground="@drawable/bg_text"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent" />
+
+                                        <ImageButton
+                                            android:id="@+id/facebook_btn"
+                                            android:layout_width="0dp"
+                                            android:layout_height="80dp"
+                                            android:background="#00FFFFFF"
+                                            android:foreground="@drawable/bg_text"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <com.facebook.login.widget.LoginButton
+                                            android:id="@+id/facebook_btn_v"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="#00000000"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.564"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:layout_constraintVertical_bias="0.0" />
+
+                                        <TextView
+                                            android:id="@+id/stop_extView2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="16dp"
+                                            android:fontFamily="@font/scp"
+                                            android:forceHasOverlappingRendering="false"
+                                            android:text="Facebook"
+                                            android:textColor="#333333"
+                                            android:textSize="32sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.564"
+                                            app:layout_constraintStart_toStartOf="parent" />
+
+                                        <ImageView
+                                            android:id="@+id/stop_imageView"
+                                            android:layout_width="64dp"
+                                            android:layout_height="64dp"
+                                            android:layout_marginStart="16dp"
+                                            android:layout_marginTop="7dp"
+                                            android:contentDescription="@string/image"
+                                            android:foreground="@drawable/ic_facebook_circular_logo"
+                                            android:foregroundTint="#3F51B5"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/ic_facebook_circular_logo"
+                                            tools:srcCompat="@drawable/ic_facebook_circular_logo" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <TextView
+                                    android:id="@+id/login"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="250dp"
+                                    android:fontFamily="@font/scp"
+                                    android:text="Login"
+                                    android:textColor="#333333"
+                                    android:textSize="48dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="180dp"
+                                    android:layout_height="184dp"
+                                    android:layout_marginBottom="20dp"
+                                    app:layout_constraintBottom_toTopOf="@id/login"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent">
+
+                                        <View
+                                            android:id="@+id/start_2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="-2dp"
+                                            android:foreground="@drawable/bg_text"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/cardView"
+                                            android:layout_width="180dp"
+                                            android:layout_height="180dp"
+                                            android:background="#ECEBEB"
+                                            app:cardCornerRadius="23dp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent">
+
+                                                <pl.droidsonroids.gif.GifImageView
+                                                    android:id="@+id/walkman_ek1"
+                                                    android:layout_width="180dp"
+                                                    android:layout_height="180dp"
+                                                    android:background="#ECEBEB"
+                                                    android:cropToPadding="false"
+                                                    android:src="@drawable/wall_man_run"
+                                                    app:layout_constraintBottom_toBottomOf="parent"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintStart_toStartOf="parent">
+
+                                                </pl.droidsonroids.gif.GifImageView>
+                                        </androidx.cardview.widget.CardView>
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

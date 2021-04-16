@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEBEB"
+    android:foregroundTint="#00B12C2C">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="70dp"
+            android:background="#D7D7D7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:id="@+id/bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#E7E7E7"
+                    android:foreground="@drawable/vana_bg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/main_vana"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="122dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="122dp"
+                            android:fontFamily="@font/scp"
+                            android:text="Mon, Feb 20, 2021"
+                            android:textColor="#333333"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="40dp"
+                            android:fontFamily="@font/scp"
+                            android:text="Daily Activity"
+                            android:textColor="#333333"
+                            android:textSize="32dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/date" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/login_btns"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="7dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/start"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginEnd="11dp"
+                                    android:layout_marginBottom="90dp"
+                                    app:layout_constraintBottom_toBottomOf="@id/logut"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent">
+
+                                        <View
+                                            android:id="@+id/start_"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="80dp"
+                                            android:foreground="@drawable/bg_text"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/start_textView2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="17dp"
+                                            android:fontFamily="@font/scp"
+                                            android:forceHasOverlappingRendering="false"
+                                            android:text="Start"
+                                            android:textColor="#333333"
+                                            android:textSize="32sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent" />
+
+                                        <ImageView
+                                            android:id="@+id/start_imageView"
+                                            android:layout_width="64dp"
+                                            android:layout_height="64dp"
+                                            android:layout_marginStart="16dp"
+                                            android:layout_marginTop="7dp"
+                                            android:contentDescription="@string/image"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/ic_baseline_not_started_24"
+                                            tools:srcCompat="@drawable/ic_baseline_not_started_24" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/logut"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginEnd="11dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent">
+
+                                        <View
+                                            android:id="@+id/stop_"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="80dp"
+                                            android:layout_marginStart="11dp"
+                                            android:layout_marginEnd="11dp"
+                                            android:foreground="@drawable/bg_text"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/stop_extView2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="17dp"
+                                            android:fontFamily="@font/scp"
+                                            android:forceHasOverlappingRendering="false"
+                                            android:text="Stop"
+                                            android:textColor="#333333"
+                                            android:textSize="32sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent" />
+
+                                        <ImageView
+                                            android:id="@+id/stop_imageView"
+                                            android:layout_width="64dp"
+                                            android:layout_height="64dp"
+                                            android:layout_marginStart="16dp"
+                                            android:layout_marginTop="7dp"
+                                            android:contentDescription="@string/image"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/ic_baseline_stop_circle_24"
+                                            tools:srcCompat="@drawable/ic_baseline_stop_circle_24" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/up_btns"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/login">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/km_containt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginTop="90dp"
+                                    android:layout_marginEnd="11dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/kcal_containt">
+
+                                        <View
+                                            android:id="@+id/km"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:foreground="@drawable/bg_text"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/km_count"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="12dp"
+                                            android:layout_marginBottom="4dp"
+                                            android:fontFamily="@font/scp"
+                                            android:forceHasOverlappingRendering="false"
+                                            android:text="17"
+                                            android:textColor="#333333"
+                                            android:textSize="60sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toStartOf="@+id/kmtextView3" />
+
+                                        <TextView
+                                            android:id="@+id/kmtextView3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="43dp"
+                                            android:layout_marginBottom="8dp"
+                                            android:fontFamily="@font/scp"
+                                            android:forceHasOverlappingRendering="false"
+                                            android:text="m"
+                                            android:textColor="#333333"
+                                            android:textSize="24sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent" />
+
+                                        <ImageView
+                                            android:id="@+id/kmimageView"
+                                            android:layout_width="64dp"
+                                            android:layout_height="64dp"
+                                            android:layout_marginStart="16dp"
+                                            android:layout_marginTop="7dp"
+                                            android:contentDescription="@string/image"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/ic_baseline_directions_run_24"
+                                            tools:srcCompat="@drawable/ic_baseline_insights_24" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/kcal_containt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginTop="90dp"
+                                    android:layout_marginEnd="11dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/steps_containt">
+
+                                        <View
+                                            android:id="@+id/kcal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:foreground="@drawable/bg_text"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/kcal_count"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="4dp"
+                                            android:fontFamily="@font/scp"
+                                            android:forceHasOverlappingRendering="false"
+                                            android:text="@string/zero"
+                                            android:textColor="#333333"
+                                            android:textSize="60sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toStartOf="@+id/kcaltextView3" />
+
+                                        <TextView
+                                            android:id="@+id/kcaltextView3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="15dp"
+                                            android:layout_marginBottom="8dp"
+                                            android:fontFamily="@font/scp"
+                                            android:forceHasOverlappingRendering="false"
+                                            android:text="kcal"
+                                            android:textColor="#333333"
+                                            android:textSize="24sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent" />
+
+                                        <ImageView
+                                            android:id="@+id/stepsimageView"
+                                            android:layout_width="64dp"
+                                            android:layout_height="64dp"
+                                            android:layout_marginStart="16dp"
+                                            android:layout_marginTop="7dp"
+                                            android:contentDescription="@string/image"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/ic_baseline_local_fire_department_24" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/steps_containt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginEnd="11dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                        <View
+                                            android:id="@+id/steps"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:foreground="@drawable/bg_text"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/step_count"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="4dp"
+                                            android:fontFamily="@font/scp"
+                                            android:forceHasOverlappingRendering="false"
+                                            android:text="@string/zero"
+                                            android:textColor="#333333"
+                                            android:textSize="60sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toStartOf="@+id/textView3" />
+
+                                        <TextView
+                                            android:id="@+id/textView3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="5dp"
+                                            android:layout_marginBottom="8dp"
+                                            android:fontFamily="@font/scp"
+                                            android:forceHasOverlappingRendering="false"
+                                            android:text="@string/steps"
+                                            android:textColor="#333333"
+                                            android:textSize="24sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent" />
+
+                                        <ImageView
+                                            android:id="@+id/imageView"
+                                            android:layout_width="64dp"
+                                            android:layout_height="64dp"
+                                            android:layout_marginStart="16dp"
+                                            android:layout_marginTop="7dp"
+                                            android:contentDescription="@string/image"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/ic_baseline_directions_run_24" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/down"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+                <ImageButton
+                    android:id="@+id/home_btn"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="@string/button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_home_24"
+                    tools:srcCompat="@drawable/ic_baseline_home_24" />
+
+                <ImageButton
+                    android:id="@+id/map_btn"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="#00C10E0E"
+                    android:contentDescription="@string/button"
+                    android:tint="#D1D1D1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_map_24"
+                    tools:srcCompat="@drawable/ic_baseline_map_24" />
+
+                <ImageButton
+                    android:id="@+id/settings_btn"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="37dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="@string/button"
+                    android:tint="#D1D1D1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_face_24"
+                    tools:srcCompat="@drawable/ic_baseline_face_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

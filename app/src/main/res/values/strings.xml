@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PleseWork</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="daily_task">Daily Task</string>
+    <string name="zero">0</string>
+    <string name="steps">steps</string>
+    <string name="image">Image</string>
+    <string name="button">button</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+
+    <!-- Notification -->
+    <string name="notification_title">Walks Steps Logger</string>
+    <string name="notification_message">Stores location and timestamps</string>
+
+    <string name="facebook_app_id">811413096249191</string>
+    <string name="fb_login_protocol_scheme">fb811413096249191</string>
+</resources>
