@@ -1,20 +1,20 @@
 # hackathon2021-test-task
 
 ### Task
- User is required to sign up.
-  ● The UI has to be in English.
-  ● Ability to log into the app by using at least 2 social networks accounts.
-  ● Push the project to a public git repository and add a description:
-   ○ what features make your app unique and better than other implementations
-   ○ startup instruction (the simpler the better)
- Evaluation criteria:
-  ● UI/UX (how intuitive, creative and modern the design is)
-  ● App performance (speed)
-  ● Code quality (readability, cleanliness, logic, best practices)
-  ● The relevance and usefulness of application for the average user
-  ● Compliance
-  ● How original the app is (Remember, there are dozens of teams with the same task as
-  you)
+- User is required to sign up.
+  - ● The UI has to be in English.
+  - ● Ability to log into the app by using at least 2 social networks accounts.
+  - ● Push the project to a public git repository and add a description:
+  - ○ what features make your app unique and better than other implementations
+  - ○ startup instruction (the simpler the better)
+- Evaluation criteria:
+ - ● UI/UX (how intuitive, creative and modern the design is)
+ - ● App performance (speed)
+ - ● Code quality (readability, cleanliness, logic, best practices)
+ - ● The relevance and usefulness of application for the average user
+ - ● Compliance
+ - ● How original the app is (Remember, there are dozens of teams with the same task as
+ - you)
 
 ### How to use
 - How to use?
